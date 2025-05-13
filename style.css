@@ -22,6 +22,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #532b6c;
 	background: url(/images/mountain.png) no-repeat;
 	background-size: cover;
 	background-position: center;
