@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="login" id="loginForm">
+				<h1>Login</h1>
+				<h3>Welcome to my Website</h3>
+
+				<form action="" class="formGrid">
+					<div class="formContainer">
+						<div class="inputContainer">
+							<input type="text" placeholder="Username" required />
+							<input type="password" placeholder="Password" required />
+						</div>
+						<span
+							>Don't have an account? Register
+							<a href="#" onclick="toggleForms()">here</a></span
+						>
+						<button onclick="login()">Login</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="register hidden" id="registerForm">
+				<h1>Register</h1>
+				<h3>Welcome to my Website</h3>
+
+				<form action="" class="formGrid">
+					<div class="formContainer">
+						<div class="inputContainer">
+							<input type="text" placeholder="Username" required />
+							<input type="password" placeholder="Password" required />
+							<input type="password" placeholder="Confirm Password" required />
+							<span class="error-message" id="passwordError"></span>
+						</div>
+						<span
+							>Already have an account? Login
+							<a href="#" onclick="toggleForms()">here</a></span
+						>
+						<button onclick="register()">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
