@@ -22,7 +22,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(/Lab9/images/mountain.png) no-repeat;
+	background: url(images/mountain.png) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -77,17 +77,17 @@ input {
 	font-size: 1rem;
 	transition: all 0.3s ease;
 	background: transparent;
-    color: var(--muted-lilac);
+	color: var(--muted-lilac);
 }
 
 input::placeholder {
-    color: var(--star-white);
+	color: var(--star-white);
 }
 
 input:focus {
 	outline: none;
 	border-color: var(--burnt-orange);
-    color: var(--star-white);
+	color: var(--star-white);
 }
 
 button {
