@@ -1,12 +1,17 @@
 :root {
-	--deep-violet: #2b1b4f;
-	--canyon-purple: #532b6c;
-	--burnt-orange: #e36d4c;
-	--dusky-rose: #cf4f5f;
-	--sunset-peach: #f49766;
-	--muted-lilac: #a470c8;
-	--twilight-indigo: #4a2473;
-	--star-white: #f4f4f4;
+	--sky-light: #d5a9f8; 
+	--sky-main: #a974f7; 
+	--cloud-light: #cfa9f5; 
+	--cloud-dark: #aa7edd; 
+	--moon-glow: #f8f1ff; 
+	--star-light: #fff6d6; 
+	--mountain-far: #9475d1; 
+	--mountain-mid: #815fbf; 
+	--mountain-close: #6a4daa;
+	--hill-dark: #412d7a; 
+	--tree-far: #3c2b72; 
+	--tree-near: #2c1e5d;
+	--accent-red: #cc2f5d;
 }
 
 * {
@@ -22,7 +27,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(/Lab9/images/mountain.png) no-repeat;
+	background: url(images/bg.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -51,13 +56,13 @@ body {
 }
 
 h1 {
-	color: var(--dusky-rose);
+	color: var(--tree-near);
 	margin-bottom: 0.5rem;
 	font-size: 2.5rem;
 }
 
 h3 {
-	color: var(--muted-lilac);
+	color: var(--tree-far);
 	margin-bottom: 2rem;
 	font-weight: 400;
 }
@@ -72,22 +77,22 @@ h3 {
 input {
 	width: 100%;
 	padding: 1rem;
-	border: 2px solid var(--canyon-purple);
+	border: 2px solid var(--hill-dark);
 	border-radius: 25px;
 	font-size: 1rem;
 	transition: all 0.3s ease;
 	background: transparent;
-	color: var(--muted-lilac);
+	color: var(--moon-glow);
 }
 
 input::placeholder {
-	color: var(--star-white);
+	color: var(--star-light);
 }
 
 input:focus {
 	outline: none;
-	border-color: var(--burnt-orange);
-	color: var(--star-white);
+	border-color: var(--star-light);
+	color: var(--tree-near);
 }
 
 button {
@@ -95,8 +100,8 @@ button {
 	padding: 1rem;
 	border: none;
 	border-radius: 10px;
-	background: #e36d4c;
-	color: var(--deep-violet);
+	background: var(--mountain-close);
+	color: var(--star-light);
 	font-size: 1rem;
 	font-weight: 600;
 	cursor: pointer;
@@ -108,14 +113,14 @@ button:hover {
 }
 
 span {
-	color: var(--star-white);
+	color: var(--star-light);
 	margin: 1rem 0;
 	display: block;
 	text-align: center;
 }
 
 a {
-	color: var(--burnt-orange);
+	color: var(--hill-dark);
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -134,7 +139,7 @@ a:hover {
 
 .active {
 	display: block;
-	color: red;
+	color: var(--accent-red);
 }
 
 @media (max-width: 480px) {
