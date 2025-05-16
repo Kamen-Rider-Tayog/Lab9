@@ -27,7 +27,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(images/bg.jpg) no-repeat;
+	background: url(/Lab9/images/bg.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
